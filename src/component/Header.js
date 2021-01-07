@@ -6,7 +6,7 @@ import logo from '../logo/logo.svg'
 function Header() {
     return (
         <div className="row">
-            <Navbar bg="light" variant="light" className="flex-grow-1">
+            <Navbar bg="light" variant="light" className="flex-grow-1 shadow-sm p-3 mb-5">
                 <Navbar.Brand href="#home" className="ml-5">
                     <img src={logo} alt="logo" width="40" />
                     <span className="ml-2">intugine</span>
@@ -23,7 +23,8 @@ function Header() {
                     </Nav.Item>
                     <Nav.Item>
                     <Nav.Link eventKey="link-3" >
-                        <img src={avatar} alt="profile" />
+                        <img src={avatar} alt="profile" className="rounded-circle" height="30"
+				width="30" style={{background:"grey" }} />
                     </Nav.Link>
                     </Nav.Item>
                 </Nav>
